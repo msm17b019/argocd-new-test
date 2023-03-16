@@ -1,0 +1,7 @@
+{
+    "chart": {
+        "name": "sealed-secrets",
+        "repoUrl": "https://bitnami-labs.github.io/sealed-secrets",
+        "version": "2.8.0"
+    }
+}
