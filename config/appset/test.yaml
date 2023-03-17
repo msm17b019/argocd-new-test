@@ -10,7 +10,7 @@ spec:
     - matrix:
         generators:
           - git:
-              repoURL: https://github.com/msm17b019/argocd-test.git
+              repoURL: https://github.com/msm17b019/argocd-new-test.git
               revision: main
               files:
               - path: config/environment/clusters/*/apps/*/config.json
