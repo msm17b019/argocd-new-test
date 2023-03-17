@@ -26,14 +26,17 @@ spec:
         - resources-finalizer.argocd.argoproj.io
     spec:
       project: default
-      source:
-        chart: '{{chart.name}}'
+      sources:
+      - chart: '{{chart.name}}'
         repoURL: '{{chart.repoUrl}}'
         targetRevision: '{{chart.version}}'
         helm:
           releaseName: 'test-{{path.basename}}'
           valueFiles:
-          - values.yaml
+          - $values/config/environment/clusters/{{path[3]}}/apps/{{path.basename}}/values.yaml
+      - repoURL: https://github.com/msm17b019/argocd-new-test.git
+        targetRevision: main
+        ref: values
       destination:
         server: '{{server}}'
         namespace: '{{path.basename}}'
