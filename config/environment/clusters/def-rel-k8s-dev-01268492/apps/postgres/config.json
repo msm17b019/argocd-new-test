@@ -1,0 +1,7 @@
+{
+    "chart": {
+        "name": "postgresql",
+        "repoUrl": "https://charts.bitnami.com/bitnami",
+        "version": "12.2.3"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "chart": {
+        "name": "mongodb",
+        "repoUrl": "https://charts.bitnami.com/bitnami",
+        "version": "13.8.3"
+    }
+}
