@@ -4,6 +4,8 @@ metadata:
   name: test
   namespace: argocd
 spec:
+  syncPolicy:
+    preserveResourcesOnDeletion: true
   generators:
     - matrix:
         generators:
@@ -41,4 +43,3 @@ spec:
           selfHeal: true
         syncOptions:
         - CreateNamespace=true
-        preserveResourcesOnDeletion: true
